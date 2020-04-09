@@ -1,2 +1,2 @@
-# Final-Project-CS-207
-This is the repository for my final project in computer science 207.
+# Final-Project-CS-207-LED-Pixel-Star
+This is project involves using sewable hardware to sew LEDs onto a piece of woven fabric in the shape of a star. These LEDs are daisy chained together and sewn to a Gemma V2 microcomputer. The colour of the LED string changes depending on the amount of light detected in the environment by a photoresistor. A pushbutton can be used to cycle through colours independent of the presence of light in the environment.
