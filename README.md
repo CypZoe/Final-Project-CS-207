@@ -35,7 +35,7 @@ The Adafruit FLORA Neopixel should be positioned roughly one inch apart on a pie
 
 <img src="Hardware/Light-Activated Pixel Star Schematic.jpg" width = "500">
 
-<img src="Hardware/Light-Activated Pixel Star breadboard.jpg" width = "500">
+<img src="Light-Activate Pixel Star breadboard.jpg" width = "500">
 
 # Usage
 
