@@ -30,3 +30,20 @@ Materials Used
 - 1 x alligator clips
 
 # Build Instructions
+
+The Adafruit FLORA Neopixel should be positioned roughly one inch apart on a piece of woven fabric which has been placed in an embroidery hoop. They should then be sewn together in a daisy chained with the data line out of one neopixel being sewn to the data line in of the next neopixel in the circuit. The first neopixel in the circuit is sewn to the Gemma V2 microcomputer with the data line in being sewn to pin D1. The ground on the microcomputer is then sewn in a continuos manner through each neopixels ground which is indicated by a subtraction sign. The same process is repeated with the voltage out of the microcomputer being sewn through each of teh voltage in holes of the neopixels which is denoted by a plus sign. The photoresistor is then sewn to the A1 pin and ground of the microcontroller. Finally the pushbutton is attached, via a wire that has been striped at both ends, to the D0 pin of the microcontroller and the parrallel leg is hooked under the conductive thread that was previously sewn to ground.
+
+<img src="Hardware/Light-Activated Pixel Star Schematic.jpg" width = "500">
+
+<img src="Hardware/Light-Activated Pixel Star breadboard.jpg" width = "500">
+
+# Usage
+
+To use this circuit you first need to upload the code. After this you can manipulate the amount of light hitting the photoresistor, this will change the colour of the neopixel string. To cycle through different colours independent of the amount of light present in the environment, hold down the pushbutton.
+
+# Team
+This project was done individually and as such I, Cypriana, was the only contributor.
+
+# Credits
+- Becky Stern - The creator of the circuit used as a template for this project
+- Phillip Burgess - The writter of the code used in the project used as a template for this project
