@@ -1,1 +1,68 @@
+// Code to change the colour of an LED string dependant on the amount of light detected by a photoresistor. Holding a Pushbutton down will cause the LEDs to cycle through six colours.
+
+#include <Adafruit_NeoPixel.h> // add library
+ 
+#define NUM_LEDS 10  // This is the number of Neopixels used
+#define LED_PIN  1  // LED's are connected to this DIGITAL pin #
+#define SENSOR   A1  // Light sensor to this ANALOG pin #
+#define BUTTON  0 // Push-button to this DIGITAL pin #
+
+Adafruit_NeoPixel strip(NUM_LEDS, LED_PIN); // Variable for LED string
+
+
+void setup() {
+  strip.begin();
+  strip.show();                  // Initialize all pixels to 'off'
+  pinMode(SENSOR, INPUT_PULLUP); // Enable pull-up resistor on sensor pin
+}
+ 
+void loop() {
+   
+  if(!digitalRead(BUTTON)){                                                // If the pushbutton is not pressed the following code will be implemented
+  if(analogRead(SENSOR) > 0 && analogRead(SENSOR) < 200) {                 // If the light level detected by the photoresitor is between 0 and 200
+    colorWipe(strip.Color(0, 0, 255), 50);                                 // Animate light green
+  } 
+     if(analogRead(SENSOR) > 200 && analogRead(SENSOR) < 400){                 // If the light level detected by the photoresitor is 200 and 400
+    colorWipe(strip.Color(0, 255, 0), 50);                                    // Animate pink
+  } 
+    if(analogRead(SENSOR) > 400 && analogRead(SENSOR)< 600 ) {                 // If the light level detected by the photoresitor is 400 and 600
+    colorWipe(strip.Color(225,0 , 0), 50);                                     // Animate red
+  } 
+    if(analogRead(SENSOR) > 600 && analogRead(SENSOR) < 800) {                 // If the light level detected by the photoresitor is 600 and 800
+    colorWipe(strip.Color(255, 0, 255), 50);                                 // Animate red
+  } 
+  if(analogRead(SENSOR) > 800 && analogRead(SENSOR) < 1000) {                 // If the light level detected by the photoresitor is 800 and 1000
+    colorWipe(strip.Color(25, 60, 30), 50);                                   // Animate green
+  } 
+ 
+  if (analogRead(SENSOR) < 0)                                                // If the light level detected by the photoresitor is less than 0
+  {
+    colorWipe(strip.Color(0, 0, 0), 50);                                     // Animate off
+    }
+  }
+  delay(2); // Pause 2 ms before repeating
+  
+ if(digitalRead(BUTTON)) // When the pushbutton is pressed the following code will implement
+ {
+    colorWipe(strip.Color(80, 30, 60), 50);  // Animate white
+    colorWipe(strip.Color(0,0,200), 50);     // Animate blue
+    colorWipe(strip.Color(100,0,0), 50);    // Animate red
+    colorWipe(strip.Color(0, 200, 0), 50);  // Animate green
+    colorWipe(strip.Color(200,90,60), 50);  // Animate light pink
+    colorWipe(strip.Color(100,70,20), 50);  // Animate yellow
+    delay(2);                               // Pause 2 ms before repearing
+   
+        }
+ 
+}
+ 
+// Fill pixels one after the other with a color
+void colorWipe(uint32_t c, uint8_t wait) {
+  for(uint16_t i=0; i<strip.numPixels(); i++) {
+    strip.setPixelColor(i, c);
+    strip.show();
+    delay(wait);
+  }
+ 
+  }
 
