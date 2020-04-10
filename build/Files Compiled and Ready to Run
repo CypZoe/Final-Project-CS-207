@@ -20,19 +20,19 @@ void loop() {
    
   if(!digitalRead(BUTTON)){                                                // If the pushbutton is not pressed the following code will be implemented
   if(analogRead(SENSOR) > 0 && analogRead(SENSOR) < 200) {                 // If the light level detected by the photoresitor is between 0 and 200
-    colorWipe(strip.Color(0, 0, 255), 50);                                 // Animate light green
+    colorWipe(strip.Color(0, 0, 255), 50);                                 // Animate blue
   } 
      if(analogRead(SENSOR) > 200 && analogRead(SENSOR) < 400){                 // If the light level detected by the photoresitor is 200 and 400
-    colorWipe(strip.Color(0, 255, 0), 50);                                    // Animate pink
+    colorWipe(strip.Color(0, 255, 0), 50);                                    // Animate green
   } 
     if(analogRead(SENSOR) > 400 && analogRead(SENSOR)< 600 ) {                 // If the light level detected by the photoresitor is 400 and 600
     colorWipe(strip.Color(225,0 , 0), 50);                                     // Animate red
   } 
     if(analogRead(SENSOR) > 600 && analogRead(SENSOR) < 800) {                 // If the light level detected by the photoresitor is 600 and 800
-    colorWipe(strip.Color(255, 0, 255), 50);                                 // Animate red
+    colorWipe(strip.Color(255, 0, 255), 50);                                 // Animate pink
   } 
   if(analogRead(SENSOR) > 800 && analogRead(SENSOR) < 1000) {                 // If the light level detected by the photoresitor is 800 and 1000
-    colorWipe(strip.Color(25, 60, 30), 50);                                   // Animate green
+    colorWipe(strip.Color(25, 60, 30), 50);                                   // Animate light green
   } 
  
   if (analogRead(SENSOR) < 0)                                                // If the light level detected by the photoresitor is less than 0
@@ -48,8 +48,8 @@ void loop() {
     colorWipe(strip.Color(0,0,200), 50);     // Animate blue
     colorWipe(strip.Color(100,0,0), 50);    // Animate red
     colorWipe(strip.Color(0, 200, 0), 50);  // Animate green
-    colorWipe(strip.Color(200,90,60), 50);  // Animate light pink
-    colorWipe(strip.Color(100,70,20), 50);  // Animate yellow
+    colorWipe(strip.Color(255,128,0), 50);  // Animate orange
+    colorWipe(strip.Color(250,255,0), 50);  // Animate yellow
     delay(2);                               // Pause 2 ms before repearing
    
         }
