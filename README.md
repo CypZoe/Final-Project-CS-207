@@ -1,5 +1,5 @@
 # Final-Project-CS-207-LED-Pixel-Star
-This project involves using sewable hardware to build a light activated pixel star. In this project LEDs are sewn onto the front side of a square of woven fabric in the shape of a star. These LEDs are daisy chained together and sewn then to a digital pin on the Gemma V2 microcomputer. The colour of the LED string changes depending on the amount of light detected in the environment by a photoresistor. A pushbutton can, also, be used to cycle through colours independent of the presence of light in the environment.
+This project involves using sewable hardware to build a light activated pixel star. In this project LEDs are sewn onto the front side of a square of woven fabric in the shape of a star. These LEDs are daisy chained together and sewn then to a digital pin on the Gemma V2 microntroller. The colour of the LED string changes depending on the amount of light detected in the environment by a photoresistor. A pushbutton can, also, be used to cycle through colours independent of the presence of light in the environment.
 
 <img src="img/IMG_20200409_170133.jpg" width = "500">
 <img src="img/IMG_20200409_170221.jpg" width = "500">
@@ -22,7 +22,7 @@ Materials Needed
 - 10 x Adafruit FLORA Neopixel LED's
 - 1 x photoresistor
 - 1 x pushbutton
-- 1 x Gemma V2 microcomputer
+- 1 x Gemma V2 microcontroller
 - 1 x 3 ply conductive thread spool (18 meters)
 - 1 x embroider hoop
 - 1 x USB cable - A/MicroB - 3ft
