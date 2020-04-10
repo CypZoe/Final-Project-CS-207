@@ -41,7 +41,7 @@ The last step of the build is to attach the pushbutton. This requires a wire whi
 
 <img src="Hardware/Light-Activated Pixel Star Schematic.jpg" width = "500">
 
-<img src="Light-Activate Pixel Star breadboard.jpg" width = "500">
+<img src="Hardware/Light-Activate Pixel Star breadboard.jpg" width = "500">
 
 # Usage
 
