@@ -1,5 +1,5 @@
 # Final-Project-CS-207-LED-Pixel-Star
-This is project involves using sewable hardware to sew LEDs onto a piece of woven fabric in the shape of a star. These LEDs are daisy chained together and sewn to a Gemma V2 microcomputer. The colour of the LED string changes depending on the amount of light detected in the environment by a photoresistor. A pushbutton can be used to cycle through colours independent of the presence of light in the environment.
+This project involves using sewable hardware to build a light activated pixel star. In this project LEDs are sewn onto the front side of a square of woven fabric in the shape of a star. These LEDs are daisy chained together and sewn then to a digital pin on the Gemma V2 microcomputer. The colour of the LED string changes depending on the amount of light detected in the environment by a photoresistor. A pushbutton can, also, be used to cycle through colours independent of the presence of light in the environment.
 
 <img src="img/IMG_20200409_170133.jpg" width = "500">
 <img src="img/IMG_20200409_170221.jpg" width = "500">
@@ -9,8 +9,8 @@ This is project involves using sewable hardware to sew LEDs onto a piece of wove
 /hardware - location of the fritzing files for the breadboard and schematic of this circuit
 /build - locations of files that are compiled and ready to run
 /libraries - the location of the link to the required library
-/examples - Example files from Arduino IDE that will run on the harware
-/img - location of files used
+/examples - Example files from Arduino IDE that will run on the harware of this project
+/img - location of pictures of the circuit
 /README.md - the file you are currently reading
 
 # Requirements and Materials
@@ -18,8 +18,8 @@ This is project involves using sewable hardware to sew LEDs onto a piece of wove
 Libraries needed
 - Adafruit_NeoPixel.h (https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-installation)
 
-Materials Used
-- 10 x Adafruit FLORA Neopixel
+Materials Needed
+- 10 x Adafruit FLORA Neopixel LED's
 - 1 x photoresistor
 - 1 x pushbutton
 - 1 x Gemma V2 microcomputer
@@ -27,11 +27,15 @@ Materials Used
 - 1 x embroider hoop
 - 1 x USB cable - A/MicroB - 3ft
 - 1 x pack of sewing needles
-- 1 x alligator clips
+- 1 x pack of alligator clips
+- 1 x wire
+- 1 x fabric chalk
 
 # Build Instructions
 
-The Adafruit FLORA Neopixel should be positioned roughly one inch apart on a piece of woven fabric which has been placed in an embroidery hoop. They should then be sewn together in a daisy chained with the data line out of one neopixel being sewn to the data line in of the next neopixel in the circuit. The first neopixel in the circuit is sewn to the Gemma V2 microcomputer with the data line in being sewn to pin D1. The ground on the microcomputer is then sewn in a continuos manner through each neopixels ground which is indicated by a subtraction sign. The same process is repeated with the voltage out of the microcomputer being sewn through each of teh voltage in holes of the neopixels which is denoted by a plus sign. The photoresistor is then sewn to the A1 pin and ground of the microcontroller. Finally the pushbutton is attached, via a wire that has been striped at both ends, to the D0 pin of the microcontroller and the parrallel leg is hooked under the conductive thread that was previously sewn to ground.
+The first step of this project is to position the LED's in the shape of a star, while the fabric is held tight in an embroidery hoop. Following this, mark the location of each LED with fabric chalk. These LED's should be positioned roughly one inch, or more, apart. They should then be sewn onto the fabric linking each data line out of one LED to the data line in of the next LED. After the data in and out of two LED's has been sewn together a knot should be tied, at each loose end, and clear nail polish should be painted over each knot. This process should be repeated until all the LED's have been daisy chained together in the shape of a star. The digital pin D1 on the Gemma V2 microcontroller should then be sewn to the data line in of the first LED. Following this the ground pin of the Gemma should be sewn in a continuos manner to ground pin of each LED. The ground pins of the Adafruit FLORA neopixel LED's are donated by a plus sign. This process should then be repeated with the voltage out pin being sewn to in a continuos manner to each voltage pin, denoted by a subtraction sign, of the LEDs.
+The next step of building this circuit is to attach the photoresistor to the front of the fabric. To do this twist the both legs of the photoresistor into a spiral, leaving roughlt one and half centimeters of the photoresistor legs strait. The straight portion of the photoresistor legs should then be painted over with clear nailpolish. Following this sew one leg to the A1 pin of the Gemma V2 microcontroller and the other to the ground pin of the Gemma.
+The last step of the build is to attach the pushbutton. This requires a wire which has haad its tubing stripped at both ends. One end of the stripped wire is then wrapped arround pin D0 of the Gemma V2 microcontroller and the other end is wrapped around on of the pushbutton legs. The pushbutton leg parrallel to the leg with the wire wrapped around it is then hooked under the conductive thread which was previously sewn to the ground pin of the Gemma.
 
 <img src="Hardware/Light-Activated Pixel Star Schematic.jpg" width = "500">
 
@@ -39,7 +43,7 @@ The Adafruit FLORA Neopixel should be positioned roughly one inch apart on a pie
 
 # Usage
 
-To use this circuit you first need to upload the code. After this you can manipulate the amount of light hitting the photoresistor, this will change the colour of the neopixel string. To cycle through different colours independent of the amount of light present in the environment, hold down the pushbutton.
+To use this circuit the first step is to upload the code. After this you can manipulate the amount of light hitting the photoresistor by covering the photoresitor with an object or by using a dimmer light switch, this will change the colour of the neopixel string. To cycle through six different colours independent of the amount of light present in the environment, hold down the pushbutton.
 
 # Team
 This project was done individually and as such I, Cypriana, was the only contributor.
