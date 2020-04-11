@@ -37,7 +37,7 @@ The first step of this project is to position the LED's in the shape of a star, 
 
 The next step of building this circuit is to attach the photoresistor to the front of the fabric. To do this twist the both legs of the photoresistor into a spiral, leaving roughlt one and half centimeters of the photoresistor legs strait. The straight portion of the photoresistor legs should then be painted over with clear nailpolish. Following this sew one leg to the A1 pin of the Gemma V2 microcontroller and the other to the ground pin of the Gemma.
 
-The last step of the build is to attach the pushbutton. This requires a wire which has haad its tubing stripped at both ends. One end of the stripped wire is then wrapped arround pin D0 of the Gemma V2 microcontroller and the other end is wrapped around on of the pushbutton legs. The pushbutton leg parrallel to the leg with the wire wrapped around it is then hooked under the conductive thread which was previously sewn to the ground pin of the Gemma.
+The last step of the build is to attach the pushbutton. This requires a wire which has haad its tubing stripped at both ends. One end of the stripped wire is then wrapped arround pin D0 of the Gemma V2 microcontroller and the other end is wrapped around on of the pushbutton legs.
 
 <img src="Hardware/Light-Activated Pixel Star Schematic.jpg" width = "500">
 
