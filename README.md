@@ -30,12 +30,13 @@ Materials Needed
 - 1 x pack of alligator clips
 - 1 x wire
 - 1 x fabric chalk
+- 1 x lithium battery (optional)
 
 # Build Instructions
 
 The first step of this project is to position the LED's in the shape of a star, while the fabric is held tight in an embroidery hoop. Following this, mark the location of each LED with fabric chalk. These LED's should be positioned roughly one inch, or more, apart. They should then be sewn onto the fabric linking each data line out of one LED to the data line in of the next LED. After the data in and out of two LED's has been sewn together a knot should be tied, at each loose end, and clear nail polish should be painted over each knot. This process should be repeated until all the LED's have been daisy chained together in the shape of a star. The digital pin D1 on the Gemma V2 microcontroller should then be sewn to the data line in of the first LED. Following this the ground pin of the Gemma should be sewn in a continuos manner to ground pin of each LED. The ground pins of the Adafruit FLORA neopixel LED's are donated by a plus sign. This process should then be repeated with the voltage out pin being sewn to in a continuos manner to each voltage pin, denoted by a subtraction sign, of the LEDs.
 
-The next step of building this circuit is to attach the photoresistor to the front of the fabric. To do this twist the both legs of the photoresistor into a spiral, leaving roughlt one and half centimeters of the photoresistor legs strait. The straight portion of the photoresistor legs should then be painted over with clear nailpolish. Following this sew one leg to the A1 pin of the Gemma V2 microcontroller and the other to the ground pin of the Gemma.
+The next step of building this circuit is to attach the photoresistor to the front of the fabric. To do this twist the both legs of the photoresistor into a spiral, leaving roughlt one and half centimeters of the photoresistor legs strait. The straight portion of the photoresistor legs should then be painted over with clear nailpolish. Following this sew one leg of the photoresistor to the A1 pin of the Gemma V2 microcontroller and the other to ground.
 
 The last step of the build is to attach the pushbutton. This requires a wire which has haad its tubing stripped at both ends. One end of the stripped wire is then wrapped arround pin D0 of the Gemma V2 microcontroller and the other end is wrapped around on of the pushbutton legs.
 
